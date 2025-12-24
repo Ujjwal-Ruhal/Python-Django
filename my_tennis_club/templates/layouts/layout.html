@@ -1,0 +1,20 @@
+{% load static tailwind_tags %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static "style_3.css" %}">
+    {% tailwind_css %}
+    <title>
+        {% block title %} default value  {% endblock %}
+    </title>
+</head>
+<body>
+    <nav>This is our navbar</nav>
+    {% block content %}
+    <h3>Created by Ujjwal, and thank you for visiting.</h3>
+    {% endblock %}
+</body>
+</html>
