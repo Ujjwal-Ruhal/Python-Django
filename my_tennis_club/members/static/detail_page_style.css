@@ -1,0 +1,16 @@
+/* body {
+    background-color: rgb(12, 12, 112); 
+} */
+
+#b1 {
+    margin-left: 25%;
+    margin-top: 5%;
+    width: 50%;
+    height: 600px;
+    border: 10px solid;
+    background-color: aqua;
+}
+
+#b2 {
+    background-color: blue;
+}

@@ -1,0 +1,24 @@
+body {
+    background-color: rgb(6, 7, 99);
+    font-size: 1.5em;
+    font-family: cursive;
+    color: white;
+}
+
+#parents {
+    margin: 10px;
+    padding: 10px;
+    border: 10px rgb(146, 77, 28);
+    background-color: rgb(7, 7, 88);
+}
+
+#child {
+    /* position: relative; */
+    background-color: rgb(174, 174, 212);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 20%;
+    column-gap: 5px;
+    
+}
