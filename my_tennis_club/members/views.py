@@ -1,6 +1,7 @@
 from django.http import HttpResponse
 from django.template import loader
-from .models import Member
+from .models import Member , shopping
+from django.shortcuts import render , get_object_or_404
 
 # Create your views here.
 def sample(request):
@@ -26,3 +27,12 @@ def details(request , id):
 def home_page(request):
     template = loader.get_template('home.html')
     return HttpResponse(template.render())
+
+def product_page(request):
+    products = shopping.objects.all()
+    # template = loader.get_template('product.html')
+    return render(request, 'product.html', {'products':products})
+
+def product_details(request, product_id):
+    product = get_object_or_404(shopping , pk= product_id)
+    return render(request , 'product_details.html', {'product' : product})
